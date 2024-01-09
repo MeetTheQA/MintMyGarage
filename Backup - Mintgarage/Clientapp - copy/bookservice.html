@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Services - Garage Renovation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Include the header dynamically -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(headerHtml => {
+                document.body.insertAdjacentHTML('afterbegin', headerHtml);
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
+    <main>
+        <section class="book-service-form">
+            <h2>Book Services</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Home Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+
+                <label for="service-type">Service Type:</label>
+                <select id="service-type" name="service-type" required>
+                    <option value="help">Help</option>
+                    <option value="consultancy">Consultancy</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="6" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+<!-- Include the footer dynamically -->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(footerHtml => {
+            document.body.insertAdjacentHTML('beforeend', footerHtml);
+        })
+        .catch(error => console.error('Error fetching footer:', error));
+</script>
+</body>
+
+</html>

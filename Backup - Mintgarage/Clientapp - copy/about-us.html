@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Garage Renovation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+   
+    <script>
+        // Fetch and insert the header dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(headerHtml => {
+                document.body.insertAdjacentHTML('afterbegin', headerHtml);
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
+    <main class="about-us-content">
+        <section class="about-us-section">
+            <h2>About Us</h2>
+            <p>Welcome to Garage Renovation, your trusted partner in transforming garages into functional and stylish spaces. Our team of experts is dedicated to providing top-notch services and high-quality products to meet your renovation needs.</p>
+
+            <p>At Garage Renovation, we understand the importance of a well-designed garage. Whether you're looking for innovative ideas, reliable products, or professional services, we have you covered.</p>
+
+            <p>Explore our website to discover inspiring renovation ideas, browse through our curated selection of products, and book our expert services to bring your dream garage to life.</p>
+        </section>
+    </main>
+
+<!-- Include the footer dynamically -->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(footerHtml => {
+            document.body.insertAdjacentHTML('beforeend', footerHtml);
+        })
+        .catch(error => console.error('Error fetching footer:', error));
+</script>
+</body>
+
+</html>

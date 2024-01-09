@@ -1,0 +1,32 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.copyright {
+    margin: 20px 0;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+}
+
+    .social-media-icons a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+
+/* Add Font Awesome styles */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');

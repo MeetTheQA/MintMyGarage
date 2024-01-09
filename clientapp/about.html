@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About me page">
+  <meta name="keywords" content="about me">
+  <title>About Us</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <!-- Include the header dynamically -->
+   <script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(headerHtml => {
+            document.body.insertAdjacentHTML('afterbegin', headerHtml);
+        })
+        .catch(error => console.error('Error fetching header:', error));
+</script>
+    <section id="showcase">
+      <div class="container">
+        <h1>Group Uchihas</h1>
+        <p>
+          Welcome to MintMyGarage your premier destination for transforming your garage into a personalized haven! We understand the pivotal role garages play in the Greater Toronto Area (GTA) during the unforgiving winter months and beyond. Our journey began with a profound realization of the dual significance that garages hold in this region.
+        </p>
+          <p>Driven by the need to shield vehicles from the harsh winter elements and fueled by the growing recognition of garages as versatile spaces, we embarked on a mission to revolutionize garage renovations. At mintmygarage, we aim to be the beacon guiding homeowners through an inspired transformation of their garage spaces.
+        </p>
+          <p>Our online platform is a treasure trove of innovative ideas, encompassing design inspirations, layout blueprints, and stunning before-and-after transformations. Delve into our extensive catalog of top-notch garage renovation products, from high-quality materials to functional fixtures and furnishings, curated to elevate your project.
+        </p>
+          <p>But we offer more than just ideas and products. Seamlessly book professional renovation services through our platform, connecting with skilled contractors and service providers dedicated to bringing your vision to life. Additionally, schedule consultations with seasoned renovation experts to receive tailored guidance and expert advice for your garage projects.
+          </p>
+          <p>Join us at MintMyGarage as we pave the way for homeowners in GTA to reimagine their garages, unlock their full potential, and enhance property values while embracing the true versatility of these spaces.
+          </p>
+  
+    
+    </section>
+    
+      
+     <!-- -------footer------ -->
+     <script>
+      fetch('footer.html')
+          .then(response => response.text())
+          .then(headerHtml => {
+              document.body.insertAdjacentHTML('beforeend', footerHtml);
+          })
+          .catch(error => console.error('Error fetching footer:', error));
+  </script>
+ 
+
+
+
+</body>
+</html>

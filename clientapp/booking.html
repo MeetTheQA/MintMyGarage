@@ -1,0 +1,69 @@
+<!-- booking.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------main style------------ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- ------------Google Fonts-------------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- --------------Icon pack font-awesome----------- -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- --------------------Google Maps Api---------------- -->
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+    </script>
+    <title>Bookings</title>
+</head>
+
+<body>
+    <!-- Include the header -->
+    <header>
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(headerHtml => {
+                    document.body.insertAdjacentHTML('afterbegin', headerHtml);
+                })
+                .catch(error => console.error('Error fetching header:', error));
+        </script>
+    </header>
+
+    <!-- Main content for booking page -->
+    <main>
+        <h1>Booked Services</h1>
+
+        <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+            <!-- Add more services as needed -->
+        </ul>
+
+        <!-- You can add additional details or customization for each service -->
+
+        <!-- Booking form (similar to the previous form example) -->
+        <form id="registerForm" method="post">
+            <!-- Include the form code from the previous example here -->
+        </form>
+    </main>
+
+    <!-- Include the footer -->
+    <footer>
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(footerHtml => {
+                    document.body.insertAdjacentHTML('beforeend', footerHtml);
+                })
+                .catch(error => console.error('Error fetching footer:', error));
+        </script>
+    </footer>
+</body>
+
+</html>

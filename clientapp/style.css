@@ -1,0 +1,757 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+} 
+
+.price_name{
+    color: #000;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(245, 244, 244);
+}
+
+p{
+    color: rgb(194, 181, 181);
+}
+
+.header{
+    background: #79da79; 
+}
+
+.header .row{
+    margin-top: 70px;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;   
+}
+
+/* Style the "Book a Service" button differently */
+nav a.button {
+    background-color: #4caf50; /* Green button color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* .row {
+   display: flex;
+   flex-wrap: nowrap;
+   overflow-x: auto;
+   -webkit-overflow-scrolling: touch;
+   -ms-overflow-style: -ms-autohiding-scrollbar; 
+}
+
+.box-container {
+  flex: 0 0 auto; 
+} */
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+/* .col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+    height: 450px;
+    /* margin-left: 20%; */
+    /* place-self: center;
+} */ 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 50px 0;
+    height: 470px;
+}
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: #ffffff;
+}
+
+.btn-main{
+    display: inline-block;
+    background: #210583;
+    color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.cart-img{
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.btn-main:hover{
+    background-color: #170653;
+
+}
+
+.categories{
+    margin: 60px 0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.small-container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.col-4{
+    flex-basis: 50%;
+    padding: 10px;
+    max-width: 220px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+    height: 200px;
+}
+
+.title{
+    color: rgb(41, 36, 36);
+    position: relative;
+    line-height: 60px;
+}
+
+.box-container {
+    height: 340px;
+    box-shadow: 0 8px 6px -6px rgba(104, 99, 99, 0.712);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+ /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+.title::after{
+    content: '';
+    background: #210583;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+.col-4 p{
+    font-size: 14px;
+}
+
+.rating .fa{
+    color: #ffbf00
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.col-4 img:hover{
+    background: url(./techbg.jpg);
+}
+ 
+.box-container .image-overlay {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.box-container:hover .image-overlay{
+    opacity: 1;
+}
+
+  .content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+   
+  .box-container:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+   
+  .content-details h3{
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+  }
+   
+  .content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+   
+  .fadeIn-bottom{
+    top: 80%;
+  }
+   
+  .fadeIn-top{
+    top: 20%;
+  }
+   
+  .fadeIn-left{
+    left: 20%;
+  }
+   
+  .fadeIn-right{
+    left: 80%;
+  }
+
+/* google maps */
+ #map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+}
+/* ----offer--- */
+.offer{
+    background-color: #000;
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img{
+    padding: 50px;
+    width: 32rem;
+}
+
+small{
+    color: #555
+}
+
+/* --------brands--------- */
+.brands{
+    margin: 100px auto;
+}
+
+.col-5{
+    width: 100px;
+}
+
+.col-5 img{
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    height: 50px;
+    width: 50px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+    filter: invert(100)
+}
+
+/* ------------ media query for menu -------------------- */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: maxHeight 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* =================================== */
+/*  1. Basic Style 
+/* =================================== */
+body, html {
+    height: 100%;
+  }
+  
+  body {
+    background: #f1f3f6;
+    color: #4c4d4d;
+    font-family: "Poppins", sans-serif;
+  }
+
+input{
+  border-bottom: solid 2px #00000057 !important;
+}
+
+  /*-------- Preloader --------*/
+  
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  form {
+    padding: 0;
+    margin: 0;
+    display: inline;
+  }
+  
+  img {
+    vertical-align: inherit;
+  }
+  
+  a, a:focus {
+    color: #007bff;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  a:hover, a:active {
+    color: #006adb;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  a:focus, a:active,
+  .btn:active:focus,
+  .btn:focus,
+  button:focus,
+  button:active {
+    outline: none;
+  }
+  
+  p {
+    line-height: 1.8;
+  }
+  
+  h1, h3 {
+    color: #252b33;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* =================================== */
+  /*  2. Helpers Classes
+  /* =================================== */
+  /* Box Shadow */
+  
+  /* Border Radius */
+  
+  /* Border Size */
+  
+  /* Text Size */
+  .oxyy-login-register .text-2 {
+    font-size: 14px !important;
+    font-size: 0.875rem !important;
+  }
+  .oxyy-login-register .text-9 {
+    font-size: 36px !important;
+    font-size: 2.25rem !important;
+  }
+  .oxyy-login-register .text-13 {
+    font-size: 3.25rem !important;
+  }
+  @media (max-width: 1200px) {
+    .oxyy-login-register .text-13 {
+      font-size: calc(1.45rem + 2.4vw)  !important;
+    }
+  }
+   .oxyy-login-register .text-13 {
+    line-height: 1.3;
+  }
+  
+  /* Line height */
+  
+  /* Font Weight */
+  .oxyy-login-register .font-weight-300 {
+    font-weight: 300 !important;
+  }
+  .oxyy-login-register .font-weight-400 {
+    font-weight: 400 !important;
+  }
+  
+  /* Opacity */
+  
+  /* Background light */
+  
+  /* Background Dark */
+  .oxyy-login-register hr {
+    border-top: 1px solid rgba(16, 85, 96, 0.1);
+  }
+  
+  /* =================================== */
+  /*  3. Layouts
+  /* =================================== */
+  #main-wrapper.oxyy-login-register {
+    background: #fff;
+  }
+  @media (min-width: 1200px) {
+    .oxyy-login-register .container {
+      max-width: 1170px !important;
+    }
+  }
+  
+  /* =================================== */
+  /*  4. Elements
+  /* =================================== */
+  /*=== 4.1 Hero Background ===*/
+  
+  /* 4.2 Nav */
+  
+  /*=== 4.3 Tabs ===*/
+  
+  /* 4.4 Video Play button */
+  
+  /* =================================== */
+  /*  5. Social Icons
+  /* =================================== */
+  
+  /* =================================== */
+  /*  6. Extras
+  /* =================================== */
+  /* 6.1 Form */
+  .oxyy-login-register .form-control {
+    border-color: #dae1e3;
+    font-size: 16px;
+    color: #656565;
+  }
+  .oxyy-login-register .form-control.bg-light {
+    background-color: #f5f5f6 !important;
+  }
+  .oxyy-login-register .form-control.border-light {
+    border-color: #f5f5f6 !important;
+  }
+  .oxyy-login-register .form-control:not(.form-control-sm) {
+    padding: .810rem .96rem;
+    height: inherit;
+  }
+  .oxyy-login-register .form-control:focus {
+    -webkit-box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+    border-color: #80bdff !important;
+  }
+  .oxyy-login-register .form-control::-webkit-input-placeholder {
+    color: #b1b4b6;
+  }
+  .oxyy-login-register .form-control:-moz-placeholder {
+    /* FF 4-18 */
+    color: #b1b4b6;
+  }
+  .oxyy-login-register .form-control::-moz-placeholder {
+    /* FF 19+ */
+    color: #b1b4b6;
+  }
+  .oxyy-login-register .form-control:-ms-input-placeholder, .oxyy-login-register .form-control::-ms-input-placeholder {
+    /* IE 10+ */
+    color: #b1b4b6;
+  }
+  
+  /* 6.2 Form Dark */
+  
+  /* 6.3 Form Border (Input with only bottom border)  */
+  
+  /* 6.4 Form Border Light (Input with only bottom border)  */
+  
+  /* 6.5 Vertical Multilple input group */
+  
+  /* 6.6 Other Bootstrap Specific */
+  .oxyy-login-register .btn {
+    padding: 0.8rem 2.6rem;
+    font-weight: 500;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .oxyy-login-register .btn-sm {
+    padding: 0.5rem 1rem;
+  }
+  .oxyy-login-register .btn:not(.btn-link) {
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  .oxyy-login-register .btn:not(.btn-link):hover {
+    -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  @media (max-width: 575.98px) {
+    .oxyy-login-register .btn:not(.btn-sm) {
+      padding: .810rem 2rem;
+    }
+  }
+   .oxyy-login-register .btn-link {
+    color: #007bff !important;
+  }
+  .oxyy-login-register .btn-link:hover {
+    color: #006adb !important;
+  }
+  
+  .oxyy-login-register .custom-control-input:checked ~ .custom-control-label::before,
+  .oxyy-login-register .custom-checkbox .custom-control-input:checked ~ .custom-control-label:before,
+  .oxyy-login-register .custom-control-input:checked ~ .custom-control-label:before {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+
+  /* Add any additional styles specific to the booking page here */
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+} */
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #088178;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #088178;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06595a;
+}
+
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+}

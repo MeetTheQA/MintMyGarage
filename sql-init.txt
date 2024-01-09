@@ -1,0 +1,27 @@
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass';
+
+define models 
+	db
+	init.py register
+	
+define schemas
+	request
+	
+	response
+	
+	
+	init.py register
+	
+crud
+	new file
+	init.py register
+	
+endpoint api
+	new file
+	api.py register
+	
+
+uvicorn main:app --reload
+
+
+http://localhost:8000/docs#/

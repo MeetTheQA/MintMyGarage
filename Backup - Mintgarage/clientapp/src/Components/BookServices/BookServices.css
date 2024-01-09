@@ -1,0 +1,33 @@
+/* BookServices.css */
+.book-services-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.booking-steps {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.step {
+    flex: 0 0 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+    .step h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+.booking-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

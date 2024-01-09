@@ -1,0 +1,49 @@
+/* BrowseProducts.css */
+.browse-products-section {
+    margin: 40px 0;
+}
+
+.product-categories {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    flex: 0 0 auto;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+    .search-bar input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px 0 0 5px;
+    }
+
+    .search-bar button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: 1px solid #4CAF50;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+
+.explore-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

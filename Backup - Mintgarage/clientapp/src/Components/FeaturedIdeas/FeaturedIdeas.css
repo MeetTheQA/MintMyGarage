@@ -1,0 +1,31 @@
+/* FeaturedIdeas.css */
+.featured-ideas-section {
+    margin: 40px 0;
+}
+
+.idea-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.idea-card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the card width as needed */
+    margin-right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    background-color: #fff;
+}
+
+    .idea-card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .idea-card p {
+        font-size: 1rem;
+        color: #666;
+    }

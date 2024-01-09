@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\clientapp",
+    "\\clientapp\\src",
+    "\\clientapp\\src\\Components",
+    "\\clientapp\\src\\Components\\ContactInformation",
+    "\\clientapp\\src\\Components\\FeaturedIdeas",
+    "\\clientapp\\src\\Components\\Footer",
+    "\\clientapp\\src\\Components\\Header",
+    "\\clientapp\\src\\Components\\HeroSection",
+    "\\clientapp\\src\\Components\\Home"
+  ],
+  "SelectedNode": "\\clientapp\\src\\Components\\Header\\Header.js",
+  "PreviewInSolutionExplorer": false
+}

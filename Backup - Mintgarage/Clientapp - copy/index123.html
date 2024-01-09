@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Renovation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <script>
+        // Fetch and insert the header dynamically
+        fetch('header.html')
+            .then(response => response.text())
+            .then(headerHtml => {
+                document.body.insertAdjacentHTML('afterbegin', headerHtml);
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
+    <main>
+        <section class="hero">
+            <h4>Transform Your Garage with Our Expert Services</h4>
+            <h2>Explore renovation ideas, browse products, book services, and schedule a consultation.</h2>
+            <a href="ideas.html">
+                <button>Check it Out</button>
+        </section>
+        
+
+       
+
+    
+<!-- Include the footer dynamically -->
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(footerHtml => {
+            document.body.insertAdjacentHTML('beforeend', footerHtml);
+        })
+        .catch(error => console.error('Error fetching footer:', error));
+</script>
+
+</body>
+
+</html>

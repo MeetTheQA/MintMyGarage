@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="du">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------main style------------ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- ------------Google Fonts-------------- -->
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- --------------Icon pack font-awesome----------- -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- --------------------Google Maps Api---------------- -->
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+        </script>
+        <title>MintmyGarage</title>
+    </head>
+
+    <body>
+        
+    <!-- Include the header dynamically -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(headerHtml => {
+                document.body.insertAdjacentHTML('afterbegin', headerHtml);
+            })
+            .catch(error => console.error('Error fetching header:', error));
+    </script>
+
+        <!-- featured products -->
+        <div class="small-container mt-5">
+        
+            <!-- Latest products -->
+            <h2 class="title">Latest Products</h2>
+            <div class="row">
+                <div class="col-4 box-container">
+                    <img src="images/Product1.jpg" alt="Gaming Laptop">
+                    <h5 class="product_name">2" grip hook</h5>
+                    <!-- <a href="https://mintgarage.ca/product/2-grip-hook/" class="buy-button">Buy Here</a> -->
+                    <a href="https://mintgarage.ca/product/2-grip-hook/" target="_blank" rel="noopener noreferrer" className="buy-button">
+                        Buy Here
+                      </a>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/Product2.jpg" alt="Camera">
+                    <h5 class="product_name">2" loop hook</h5>
+                    <a href="https://mintgarage.ca/product/2-grip-loop-hook/" target="_blank" rel="noopener noreferrer" className="buy-button">
+                        Buy Here
+                    </a>
+                    
+                </div>
+               
+                <div class="col-4 box-container">
+                    <img src="images/Product3.jpg" alt="Camera">
+                    <h5 class="product_name">4" grip hook</h5>
+                    <a href="https://mintgarage.ca/product/2-grip-loop-hook/" target="_blank" rel="noopener noreferrer" className="buy-button">
+                        Buy Here
+                    </a>
+                    
+                </div>
+
+                <div class="col-4 box-container">
+                    <img src="images/Product4.jpg" alt="Camera">
+                    <h5 class="product_name">4" loop hook</h5>
+                    <a href="https://mintgarage.ca/product/2-grip-loop-hook/" target="_blank" rel="noopener noreferrer" className="buy-button">
+                        Buy Here
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+       
+
+       
+
+      
+               <!-- -------footer------ -->
+               <script>
+                fetch('footer.html')
+                    .then(response => response.text())
+                    .then(headerHtml => {
+                        document.body.insertAdjacentHTML('beforeend', footerHtml);
+                    })
+                    .catch(error => console.error('Error fetching footer:', error));
+            </script>
+        <script src="main.js"></script>
+            <!--Load the API from the specified URL
+            * The async attribute allows the browser to render the page while the API loads
+            * The key parameter will contain your own API key (which is not needed for this tutorial)
+            * The callback parameter executes the initMap() function
+            -->
+    </body>
+
+</html>
